@@ -1,0 +1,63 @@
+.todo {
+    display: flex;
+    padding: 0.4em 0.5em;
+    background-color: #FFF;
+    border-bottom: 1px solid #DDD;
+}
+
+.todo:nth-child(even) {
+    background-color: #EEE;
+}
+
+.todo:last-of-type {
+    border-bottom: none;
+}
+
+.todo .id {
+    flex: 1 1 2em;
+}
+
+.todo .title {
+    flex: 1 1 100%;
+    cursor: pointer;
+    user-select: none;
+}
+
+.todo.completed .title {
+    text-decoration: line-through;
+}
+
+.todo .delete {
+    flex: 0 1 3em;
+}
+
+.todo-input {
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    appearance: none;
+    border: none;
+    background-color: #F3F3F3;
+    margin-top: 15px;
+    font-size: 20px;
+    outline: none;
+}
+
+.todo-submit {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    appearance: none;
+    border: none;
+    outline: none;
+
+    background-color: #FE4880;
+    color: #FFF;
+    margin: 15px auto;
+
+    padding: 10px 15px;
+    /* font-size: 10px; */
+    font-weight: 700;
+
+    cursor: pointer;
+}
